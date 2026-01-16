@@ -17,14 +17,8 @@ public final class ReadmeSamples {
         ConnectionsClient connectionsClient = builder.buildConnectionsClient();
         DatasetsClient datasetsClient = builder.buildDatasetsClient();
         DeploymentsClient deploymentsClient = builder.buildDeploymentsClient();
-        EvaluationRulesClient evaluationRulesClient = builder.buildEvaluationRulesClient();
         EvaluationsClient evaluationsClient = builder.buildEvaluationsClient();
-        EvaluationTaxonomiesClient evaluationTaxonomiesClient = builder.buildEvaluationTaxonomiesClient();
-        EvaluatorsClient evaluatorsClient = builder.buildEvaluatorsClient();
         IndexesClient indexesClient = builder.buildIndexesClient();
-        InsightsClient insightsClient = builder.buildInsightsClient();
-        RedTeamsClient redTeamsClient = builder.buildRedTeamsClient();
-        SchedulesClient schedulesClient = builder.buildSchedulesClient();
         // END: com.azure.ai.projects.clientInitialization
 
         // BEGIN: com.azure.ai.projects.evaluationsClientInit

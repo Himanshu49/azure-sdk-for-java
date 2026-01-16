@@ -6,6 +6,14 @@
 
 ### Breaking Changes
 
+- Removed the following sub-clients and their associated models: 
+  - `EvaluationRules`
+  - `EvaluationTaxonomies`
+  - `Evaluators`
+  - `Insights`
+  - `RedTeams`
+  - `Schedules`
+
 ### Bugs Fixed
 
 ### Other Changes

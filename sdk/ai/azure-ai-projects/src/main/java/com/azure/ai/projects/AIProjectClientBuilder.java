@@ -56,22 +56,10 @@ import java.util.Objects;
         DatasetsClient.class,
         IndexesClient.class,
         DeploymentsClient.class,
-        RedTeamsClient.class,
-        EvaluationRulesClient.class,
-        EvaluationTaxonomiesClient.class,
-        EvaluatorsClient.class,
-        InsightsClient.class,
-        SchedulesClient.class,
         ConnectionsAsyncClient.class,
         DatasetsAsyncClient.class,
         IndexesAsyncClient.class,
-        DeploymentsAsyncClient.class,
-        RedTeamsAsyncClient.class,
-        EvaluationRulesAsyncClient.class,
-        EvaluationTaxonomiesAsyncClient.class,
-        EvaluatorsAsyncClient.class,
-        InsightsAsyncClient.class,
-        SchedulesAsyncClient.class })
+        DeploymentsAsyncClient.class })
 public final class AIProjectClientBuilder
     implements HttpTrait<AIProjectClientBuilder>, ConfigurationTrait<AIProjectClientBuilder>,
     TokenCredentialTrait<AIProjectClientBuilder>, EndpointTrait<AIProjectClientBuilder> {
@@ -379,66 +367,6 @@ public final class AIProjectClientBuilder
     }
 
     /**
-     * Builds an instance of RedTeamsAsyncClient class.
-     *
-     * @return an instance of RedTeamsAsyncClient.
-     */
-    @Generated
-    public RedTeamsAsyncClient buildRedTeamsAsyncClient() {
-        return new RedTeamsAsyncClient(buildInnerClient().getRedTeams());
-    }
-
-    /**
-     * Builds an instance of EvaluationRulesAsyncClient class.
-     *
-     * @return an instance of EvaluationRulesAsyncClient.
-     */
-    @Generated
-    public EvaluationRulesAsyncClient buildEvaluationRulesAsyncClient() {
-        return new EvaluationRulesAsyncClient(buildInnerClient().getEvaluationRules());
-    }
-
-    /**
-     * Builds an instance of EvaluationTaxonomiesAsyncClient class.
-     *
-     * @return an instance of EvaluationTaxonomiesAsyncClient.
-     */
-    @Generated
-    public EvaluationTaxonomiesAsyncClient buildEvaluationTaxonomiesAsyncClient() {
-        return new EvaluationTaxonomiesAsyncClient(buildInnerClient().getEvaluationTaxonomies());
-    }
-
-    /**
-     * Builds an instance of EvaluatorsAsyncClient class.
-     *
-     * @return an instance of EvaluatorsAsyncClient.
-     */
-    @Generated
-    public EvaluatorsAsyncClient buildEvaluatorsAsyncClient() {
-        return new EvaluatorsAsyncClient(buildInnerClient().getEvaluators());
-    }
-
-    /**
-     * Builds an instance of InsightsAsyncClient class.
-     *
-     * @return an instance of InsightsAsyncClient.
-     */
-    @Generated
-    public InsightsAsyncClient buildInsightsAsyncClient() {
-        return new InsightsAsyncClient(buildInnerClient().getInsights());
-    }
-
-    /**
-     * Builds an instance of SchedulesAsyncClient class.
-     *
-     * @return an instance of SchedulesAsyncClient.
-     */
-    @Generated
-    public SchedulesAsyncClient buildSchedulesAsyncClient() {
-        return new SchedulesAsyncClient(buildInnerClient().getSchedules());
-    }
-
-    /**
      * Builds an instance of ConnectionsClient class.
      *
      * @return an instance of ConnectionsClient.
@@ -476,66 +404,6 @@ public final class AIProjectClientBuilder
     @Generated
     public DeploymentsClient buildDeploymentsClient() {
         return new DeploymentsClient(buildInnerClient().getDeployments());
-    }
-
-    /**
-     * Builds an instance of RedTeamsClient class.
-     *
-     * @return an instance of RedTeamsClient.
-     */
-    @Generated
-    public RedTeamsClient buildRedTeamsClient() {
-        return new RedTeamsClient(buildInnerClient().getRedTeams());
-    }
-
-    /**
-     * Builds an instance of EvaluationRulesClient class.
-     *
-     * @return an instance of EvaluationRulesClient.
-     */
-    @Generated
-    public EvaluationRulesClient buildEvaluationRulesClient() {
-        return new EvaluationRulesClient(buildInnerClient().getEvaluationRules());
-    }
-
-    /**
-     * Builds an instance of EvaluationTaxonomiesClient class.
-     *
-     * @return an instance of EvaluationTaxonomiesClient.
-     */
-    @Generated
-    public EvaluationTaxonomiesClient buildEvaluationTaxonomiesClient() {
-        return new EvaluationTaxonomiesClient(buildInnerClient().getEvaluationTaxonomies());
-    }
-
-    /**
-     * Builds an instance of EvaluatorsClient class.
-     *
-     * @return an instance of EvaluatorsClient.
-     */
-    @Generated
-    public EvaluatorsClient buildEvaluatorsClient() {
-        return new EvaluatorsClient(buildInnerClient().getEvaluators());
-    }
-
-    /**
-     * Builds an instance of InsightsClient class.
-     *
-     * @return an instance of InsightsClient.
-     */
-    @Generated
-    public InsightsClient buildInsightsClient() {
-        return new InsightsClient(buildInnerClient().getInsights());
-    }
-
-    /**
-     * Builds an instance of SchedulesClient class.
-     *
-     * @return an instance of SchedulesClient.
-     */
-    @Generated
-    public SchedulesClient buildSchedulesClient() {
-        return new SchedulesClient(buildInnerClient().getSchedules());
     }
 
     /**

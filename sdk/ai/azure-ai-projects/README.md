@@ -50,14 +50,8 @@ AIProjectClientBuilder builder = new AIProjectClientBuilder();
 ConnectionsClient connectionsClient = builder.buildConnectionsClient();
 DatasetsClient datasetsClient = builder.buildDatasetsClient();
 DeploymentsClient deploymentsClient = builder.buildDeploymentsClient();
-EvaluationRulesClient evaluationRulesClient = builder.buildEvaluationRulesClient();
 EvaluationsClient evaluationsClient = builder.buildEvaluationsClient();
-EvaluationTaxonomiesClient evaluationTaxonomiesClient = builder.buildEvaluationTaxonomiesClient();
-EvaluatorsClient evaluatorsClient = builder.buildEvaluatorsClient();
 IndexesClient indexesClient = builder.buildIndexesClient();
-InsightsClient insightsClient = builder.buildInsightsClient();
-RedTeamsClient redTeamsClient = builder.buildRedTeamsClient();
-SchedulesClient schedulesClient = builder.buildSchedulesClient();
 ```
 
 In the particular case of the `EvaluationsClient`, this client library exposes [OpenAI's official SDK][openai_java_sdk] directly, so you can use the [official OpenAI docs][openai_api_docs] to access this feature.

@@ -137,90 +137,6 @@ public final class AIProjectClientImpl {
     }
 
     /**
-     * The RedTeamsImpl object to access its operations.
-     */
-    private final RedTeamsImpl redTeams;
-
-    /**
-     * Gets the RedTeamsImpl object to access its operations.
-     * 
-     * @return the RedTeamsImpl object.
-     */
-    public RedTeamsImpl getRedTeams() {
-        return this.redTeams;
-    }
-
-    /**
-     * The EvaluationRulesImpl object to access its operations.
-     */
-    private final EvaluationRulesImpl evaluationRules;
-
-    /**
-     * Gets the EvaluationRulesImpl object to access its operations.
-     * 
-     * @return the EvaluationRulesImpl object.
-     */
-    public EvaluationRulesImpl getEvaluationRules() {
-        return this.evaluationRules;
-    }
-
-    /**
-     * The EvaluationTaxonomiesImpl object to access its operations.
-     */
-    private final EvaluationTaxonomiesImpl evaluationTaxonomies;
-
-    /**
-     * Gets the EvaluationTaxonomiesImpl object to access its operations.
-     * 
-     * @return the EvaluationTaxonomiesImpl object.
-     */
-    public EvaluationTaxonomiesImpl getEvaluationTaxonomies() {
-        return this.evaluationTaxonomies;
-    }
-
-    /**
-     * The EvaluatorsImpl object to access its operations.
-     */
-    private final EvaluatorsImpl evaluators;
-
-    /**
-     * Gets the EvaluatorsImpl object to access its operations.
-     * 
-     * @return the EvaluatorsImpl object.
-     */
-    public EvaluatorsImpl getEvaluators() {
-        return this.evaluators;
-    }
-
-    /**
-     * The InsightsImpl object to access its operations.
-     */
-    private final InsightsImpl insights;
-
-    /**
-     * Gets the InsightsImpl object to access its operations.
-     * 
-     * @return the InsightsImpl object.
-     */
-    public InsightsImpl getInsights() {
-        return this.insights;
-    }
-
-    /**
-     * The SchedulesImpl object to access its operations.
-     */
-    private final SchedulesImpl schedules;
-
-    /**
-     * Gets the SchedulesImpl object to access its operations.
-     * 
-     * @return the SchedulesImpl object.
-     */
-    public SchedulesImpl getSchedules() {
-        return this.schedules;
-    }
-
-    /**
      * Initializes an instance of AIProjectClient client.
      * 
      * @param endpoint Foundry Project endpoint in the form
@@ -272,11 +188,5 @@ public final class AIProjectClientImpl {
         this.datasets = new DatasetsImpl(this);
         this.indexes = new IndexesImpl(this);
         this.deployments = new DeploymentsImpl(this);
-        this.redTeams = new RedTeamsImpl(this);
-        this.evaluationRules = new EvaluationRulesImpl(this);
-        this.evaluationTaxonomies = new EvaluationTaxonomiesImpl(this);
-        this.evaluators = new EvaluatorsImpl(this);
-        this.insights = new InsightsImpl(this);
-        this.schedules = new SchedulesImpl(this);
     }
 }

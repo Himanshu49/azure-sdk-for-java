@@ -49,9 +49,8 @@ public class ClientTestBase extends TestProxyTestBase {
         }
 
         String version = Configuration.getGlobalConfiguration().get("SERVICE_VERSION");
-        AIProjectsServiceVersion serviceVersion = version != null
-            ? AIProjectsServiceVersion.valueOf(version)
-            : AIProjectsServiceVersion.V2025_11_15_PREVIEW;
+        AIProjectsServiceVersion serviceVersion
+            = version != null ? AIProjectsServiceVersion.valueOf(version) : AIProjectsServiceVersion.V1;
         builder.serviceVersion(serviceVersion);
         return builder;
     }
